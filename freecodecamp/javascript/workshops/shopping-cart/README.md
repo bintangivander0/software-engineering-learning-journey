@@ -1,7 +1,9 @@
 # Build a Shopping Cart
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML%2C%20CSS%20%26%20JavaScript-Classes-0A0A23" alt="HTML, CSS & JavaScript Classes" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-Classes-4B5563?labelColor=F7DF1E&logo=javascript&logoColor=000" alt="JavaScript Classes" />
   <img src="https://img.shields.io/badge/freeCodeCamp-Workshop-0A0A23?logo=freecodecamp&logoColor=white" alt="freeCodeCamp Workshop" />
   <img src="https://img.shields.io/badge/Topic-Classes-4B5563" alt="Classes" />
 </p>
