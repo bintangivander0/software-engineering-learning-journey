@@ -1,7 +1,7 @@
 # Build a Countup
 
 <p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-Recursion-0A0A23?style=for-the-badge&logo=javascript&labelColor=F7DF1E&logoColor=fff" alt="JavaScript Recursion" />
+  <img src="https://img.shields.io/badge/JavaScript-Recursion-0A0A23?logo=javascript&labelColor=F7DF1E&logoColor=fff" alt="JavaScript Recursion" />
   <img src="https://img.shields.io/badge/freeCodeCamp-Workshop-0A0A23?logo=freecodecamp&logoColor=white" alt="freeCodeCamp Workshop" />
   <img src="https://img.shields.io/badge/Topic-Recursion-4B5563" alt="Recursion" />
 </p>
