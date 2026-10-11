@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white" alt="CSS3" />
   <img src="https://img.shields.io/badge/JavaScript-localStorage%20and%20CRUD%20Operations-4B5563?labelColor=F7DF1E&logo=javascript&logoColor=000" alt="JavaScript localStorage and CRUD Operationss" />
   <img src="https://img.shields.io/badge/freeCodeCamp-Workshop-0A0A23?logo=freecodecamp&logoColor=white" alt="freeCodeCamp Workshop" />
   <img src="https://img.shields.io/badge/Topic-localStorage%20and%20CRUD%20Operations-4B5563" alt="localStorage and CRUD Operations" />
