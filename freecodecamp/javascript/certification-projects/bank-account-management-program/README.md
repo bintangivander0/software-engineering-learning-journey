@@ -1,7 +1,7 @@
 # Build a Bank Account Management Program
 
 <p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-0A0A23?logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" alt="JavaScript" />
   <img src="https://img.shields.io/badge/freeCodeCamp-Certification%20Project-0A0A23?logo=freecodecamp&logoColor=white" alt="freeCodeCamp Certification Project" />
 </p>
 
