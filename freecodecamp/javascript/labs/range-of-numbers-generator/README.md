@@ -1,7 +1,7 @@
-# Build a Countdown
+# Build a Range of Numbers Generator
 
 <p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-Recursion-4B5563?labelColor=F7DF1E&logo=javascript&logoColor=000" alt="JavaScript Recursion" />
+  <img src="https://img.shields.io/badge/JavaScript-Recursion-F7DF1E?logo=javascript&logoColor=000" alt="JavaScript Recursion" />
   <img src="https://img.shields.io/badge/freeCodeCamp-Lab-0A0A23?logo=freecodecamp&logoColor=white" alt="freeCodeCamp Lab" />
   <img src="https://img.shields.io/badge/Topic-Recursion-4B5563" alt="Recursion" />
 </p>
@@ -10,25 +10,24 @@
 
 ## About
 
-Project ini membuat function `countdown()` yang menghasilkan array berisi angka dari angka yang diberikan hingga `1`.
+Project ini membuat fungsi `rangeOfNumbers()` untuk menghasilkan array angka dari nilai minimum hingga nilai maksimum.
 
-Project ini digunakan untuk mempraktikkan recursion, base case, recursive function call, serta penggunaan array method `unshift()`.
+Project ini digunakan untuk mempraktikkan recursion, base case, recursive function call, serta penggunaan method `push()` pada array.
 
 ## Konsep Utama
 
 - Function
 - Recursion
 - Base case
-- `if...else`
-- Array
-- `unshift()`
-- `return`
 - Recursive function call
+- Array
+- `push()`
+- `return`
 
 ## Struktur Project
 
 ```text
-countdown/
+range-of-numbers-generator/
 └── solution.js
 ```
 
@@ -38,129 +37,119 @@ countdown/
 
 ## Pembahasan
 
-### 1. Function `countdown()`
+### 1. Function `rangeOfNumbers()`
 
 ```js
-function countdown(number) {
+function rangeOfNumbers(min, max) {
   let countArray = [];
 ```
 
-Function `countdown()` menerima satu parameter bernama `number`.
+Function `rangeOfNumbers()` menerima dua parameter, yaitu `min` sebagai nilai awal dan `max` sebagai nilai akhir.
 
-`countArray` dibuat sebagai array kosong untuk menyimpan angka hasil proses countdown.
+`countArray` digunakan untuk menyimpan angka yang dihasilkan selama proses recursion.
 
 ### 2. Base Case
 
 ```js
-  if (number < 1) {
-    return [];
-  }
+if (max < min) {
+  return [];
+}
 ```
 
 Base case menentukan kapan recursion harus berhenti.
 
-Ketika `number` kurang dari `1`, function langsung mengembalikan array kosong.
+Ketika `max` sudah lebih kecil daripada `min`, function mengembalikan array kosong sehingga recursion tidak terus memanggil dirinya sendiri.
 
-Kondisi ini mencegah function terus memanggil dirinya sendiri tanpa batas.
-
-### 3. Recursive Call
+### 3. Recursive Function Call
 
 ```js
-  else {
-    countArray = countdown(number - 1);
+else {
+  countArray = rangeOfNumbers(min, max - 1);
 ```
 
-Function `countdown()` memanggil dirinya sendiri dengan nilai `number - 1`.
+Pada bagian `else`, function memanggil dirinya sendiri dengan nilai `max - 1`.
 
-Jika function dipanggil dengan `10`, recursive call terus berjalan dengan nilai yang lebih kecil sampai mencapai `0`.
+Pemanggilan ini terus mengurangi nilai `max` sampai kondisi base case tercapai.
 
-Ketika mencapai `0`, base case dijalankan dan recursion mulai mengembalikan hasilnya.
-
-### 4. Menambahkan Angka dengan `unshift()`
+### 4. Menambahkan `max` dengan `push()`
 
 ```js
-    countArray.unshift(number);
+countArray.push(max);
 ```
 
-Setelah recursive call mengembalikan array, angka saat ini ditambahkan ke bagian depan array.
+Setelah recursive call mengembalikan array, nilai `max` ditambahkan ke bagian akhir array menggunakan `push()`.
 
-Method `unshift()` menambahkan satu atau beberapa elemen ke awal array.
-
-Pada project ini, `unshift()` digunakan agar angka yang lebih besar ditempatkan sebelum angka yang lebih kecil.
+Karena penambahan dilakukan setelah recursive call selesai, angka yang lebih kecil sudah tersedia lebih dahulu di dalam array.
 
 ### 5. Mengembalikan Array
 
 ```js
-    return countArray;
-  }
-}
+return countArray;
 ```
 
-`return` mengembalikan `countArray` ke function call sebelumnya.
+Function mengembalikan `countArray` setelah nilai `max` ditambahkan.
 
-Setiap hasil yang dikembalikan kemudian diproses lagi sampai kembali ke pemanggilan awal.
+Nilai yang dikembalikan kemudian digunakan oleh pemanggilan function sebelumnya sampai pemanggilan awal selesai.
 
 ### 6. Menjalankan Function
 
 ```js
-console.log(countdown(10));
+console.log(rangeOfNumbers(3, 9));
 ```
 
-Function dipanggil dengan nilai awal `10`.
+Function dijalankan dengan `min` bernilai `3` dan `max` bernilai `9`.
 
 Hasil akhirnya adalah:
 
 ```text
-[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+[3, 4, 5, 6, 7, 8, 9]
 ```
 
 ## Method yang Dipakai
 
-- `unshift()` digunakan untuk menambahkan `number` ke bagian awal array.
+- `push()` digunakan untuk menambahkan nilai `max` ke bagian akhir array.
 
 ## Ringkasan Cepat
 
 | Konsep | Fungsi |
 |---|---|
-| `countdown()` | Menjalankan proses countdown menggunakan recursion |
-| Base case | Menghentikan recursion ketika `number < 1` |
-| `countdown(number - 1)` | Memanggil kembali function dengan nilai yang lebih kecil |
-| `unshift()` | Menambahkan angka ke bagian awal array |
-| `return` | Mengembalikan hasil function |
-| `countArray` | Menyimpan angka hasil proses countdown |
+| `rangeOfNumbers()` | Menghasilkan array angka dari `min` hingga `max` |
+| Recursion | Memanggil function yang sama dengan nilai `max` yang lebih kecil |
+| Base case | Menghentikan recursion ketika `max < min` |
+| `push()` | Menambahkan `max` ke array |
+| `return` | Mengembalikan array hasil recursion |
 
 ## Catatan Belajar
 
-- **Recursion** terjadi ketika sebuah function memanggil dirinya sendiri.
-- **Base case** menentukan kondisi yang menghentikan recursion.
-- **`number - 1`** membuat setiap recursive call bergerak menuju base case.
-- **`unshift()`** menempatkan angka baru di bagian depan array.
-- **`return`** mengembalikan hasil recursive call ke function sebelumnya.
+- **Recursion** membuat function memanggil dirinya sendiri untuk menyelesaikan masalah secara bertahap.
+- **Base case** menghentikan recursion ketika kondisi tertentu tercapai.
+- **Recursive call** pada project ini menggunakan `max - 1`.
+- **`push()`** menambahkan angka ke bagian akhir `countArray`.
+- **`return`** mengembalikan hasil recursion kepada pemanggilan function sebelumnya.
 
 ## What I Practiced
 
 ```text
 JavaScript Functions
 Recursion
-Base Case
+Base Cases
 Recursive Function Calls
-If...Else
 Arrays
-Array unshift()
+Array Methods
+The push() Method
 Return Values
 ```
 
 ---
 
 **Platform:** freeCodeCamp  
-**Lab:** Build a Countdown  
+**Lab:** Build a Range of Numbers Generator  
 **Language:** JavaScript  
 **Focus:** Recursion
 
 ---
 
 <p align="center">
-  <strong>Recursion Section — Build a Countdown Completed</strong><br>
+  <strong>Recursion Section — Build a Range of Numbers Generator Completed</strong><br>
   <sub>Next stop: continue the JavaScript Certification journey.</sub>
 </p>
-
