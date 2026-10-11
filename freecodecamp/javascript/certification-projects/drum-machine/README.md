@@ -230,7 +230,7 @@ Google Fonts
 
 **Platform:** freeCodeCamp  
 **Certification Project:** Build a Drum Machine  
-**Language:** HTML, CSS, JavaScript
+**Language:** HTML, CSS & JavaScript
 
 ---
 
