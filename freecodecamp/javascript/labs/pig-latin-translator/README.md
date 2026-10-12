@@ -1,7 +1,7 @@
 # Implement a Pig Latin Translator
 
 <p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-Basic%20Regex-F7DF1E?logo=javascript&logoColor=000" alt="JavaScript Basic Regex" />
+  <img src="https://img.shields.io/badge/JavaScript-Basic%20Regex-4B5563?labelColor=F7DF1E&logo=javascript&logoColor=000" alt="JavaScript Basic Regex" />
   <img src="https://img.shields.io/badge/freeCodeCamp-Lab-0A0A23?logo=freecodecamp&logoColor=white" alt="freeCodeCamp Lab" />
   <img src="https://img.shields.io/badge/Topic-Basic%20Regex-4B5563" alt="Basic Regex" />
 </p>
