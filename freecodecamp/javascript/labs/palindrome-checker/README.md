@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white" alt="CSS3" />
   <img src="https://img.shields.io/badge/JavaScript-Basic%20Regex-4B5563?labelColor=F7DF1E&logo=javascript&logoColor=000" alt="JavaScript Basic Regex" />
   <img src="https://img.shields.io/badge/freeCodeCamp-Lab-0A0A23?logo=freecodecamp&logoColor=white" alt="freeCodeCamp Lab" />
   <img src="https://img.shields.io/badge/Topic-Basic%20Regex-4B5563" alt="Basic Regex" />
