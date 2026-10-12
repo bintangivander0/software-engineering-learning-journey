@@ -20,7 +20,7 @@ Project ini menggunakan JavaScript untuk menangani event klik, memeriksa class p
 
 ## Preview
 
-![Build a Favorite Icon Toggler Preview](/preview.jpeg)
+![Build a Favorite Icon Toggler Preview](preview.jpeg)
 
 ## Konsep Utama
 
