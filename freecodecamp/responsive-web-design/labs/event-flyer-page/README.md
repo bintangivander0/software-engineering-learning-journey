@@ -1,7 +1,8 @@
 # Build an Event Flyer Page
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML%20%26%20CSS-Absolute%20and%20Relative%20Units-0A0A23" alt="HTML & CSS Absolute and Relative Units" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-Absolute%20and%20Relative%20Units-4B5563?labelColor=1572B6&logo=css&logoColor=white" alt="CSS3 Absolute and Relative Units" />
   <img src="https://img.shields.io/badge/freeCodeCamp-Lab-0A0A23?logo=freecodecamp&logoColor=white" alt="freeCodeCamp Lab" />
   <img src="https://img.shields.io/badge/Topic-Absolute%20and%20Relative%20Units-4B5563" alt="Absolute and Relative Units" />
 </p>
