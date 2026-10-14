@@ -311,7 +311,7 @@ Data Transformation
 **Platform:** freeCodeCamp  
 **Lab:** Build a Device Loan Ledger  
 **Language:** JavaScript  
-**Focus:** JavaScript Loops
+**Focus:** Loops
 
 ---
 
