@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/JavaScript-Loops-4B5563?labelColor=F7DF1E&logo=javascript&logoColor=000" lt="JavaScript Loops" />
   <img src="https://img.shields.io/badge/freeCodeCamp-Lab-0A0A23?logo=freecodecamp&logoColor=white" alt="freeCodeCamp Lab" />
-  <img src="https://img.shields.io/badge/Topic-JavaScript%20Loops-4B5563" alt="JavaScript Loops" />
+  <img src="https://img.shields.io/badge/Topic-Loops-4B5563" alt="Loops" />
 </p>
 
 > **Milestone:** Lab setelah mempelajari JavaScript Loops.
