@@ -1,7 +1,8 @@
 # Build a Job Application Form
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML%20%26%20CSS-Pseudo%20Classes%20and%20Elements-0A0A23" alt="HTML & CSS Pseudo Classes and Elements" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-Pseudo%20Classes%20and%20Elements-4B5563?labelColor=1572B6&logo=css&logoColor=white" alt="CSS3 Pseudo Classes and Elements" />
   <img src="https://img.shields.io/badge/freeCodeCamp-Lab-0A0A23?logo=freecodecamp&logoColor=white" alt="freeCodeCamp Lab" />
   <img src="https://img.shields.io/badge/Topic-Pseudo%20Classes%20and%20Elements-4B5563" alt="Pseudo Classes and Elements" />
 </p>
