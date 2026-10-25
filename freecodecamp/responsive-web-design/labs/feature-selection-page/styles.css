@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght@1..144,-5,87.5,300&display=swap');
+
+.google-sans-flex-h1 {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "ROND" 0;
+}
+
+.google-sans-flex-h2 {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 95,
+    "ROND" 50;
+}
+
+.google-sans-flex-p {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" -5,
+    "wdth" 85,
+    "ROND" 0;
+}
+
+h1 {
+  color: #1141b5;
+}
+
+h2 {
+  color: #114180;
+}
+
+p {
+  color: #506077
+}
+
+body {
+  height: 100vh;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.feature-card-container {
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.feature-card {
+  position: relative;
+  min-width: 150px;
+  max-width: 180px;
+  flex: 1 1 165px;
+  padding: 20px;
+  border: 1.8px solid #1a73e8;
+  border-radius: 14px;
+  background-color: #fafafa;
+  transition: box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 1.5px 2.5px 2.5px #00e5ff30;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  z-index: 10;
+  height: 23px;
+  width: 23px;
+  border: 1.5px solid #ca8000;
+  border-radius: 50px;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #01b750;
+  border-color: #01b750;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: white;
+  line-height: 22.5px;
+}
