@@ -92,7 +92,7 @@ body {
 
 Pengaturan ini menciptakan pergeseran rona yang mulus dari jingga hingga warna kuning menyala menuju ke arah bawah layar.
 
-### 4. Background Semi-Transparan (Alpha Channel)
+### 4. Background Semi-Transparan
 
 Kontainer form serta elemen input menggunakan latar abu-abu dengan efek sedikit tembus pandang:
 
@@ -120,7 +120,7 @@ textarea::placeholder {
 
 Ini memungkinkan kita untuk mengontrol warna, perataan, serta font teks bayangan yang muncul saat input masih kosong.
 
-### 6. Styling Pseudo-classes (Focus, Hover, Active)
+### 6. Focus, Hover, dan Active
 
 Elemen form memberikan umpan balik interaktif saat pengguna menekannya melalui state `:focus`. Pada state ini, efek highlight standar browser sengaja disembunyikan:
 
