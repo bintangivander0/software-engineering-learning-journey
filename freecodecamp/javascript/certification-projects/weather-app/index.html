@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <main class="main-container">
+      <h1 class="app-title">WEATHER APP</h1>
+
+      <div class="app-grid">
+        <div id="selection" class="card selection-card">
+          <label for="city-choices"> WEATHER FOR</label>
+          <select id="city-choices" name="city">
+            <option value="" disabled selected>... Choose City ...</option>
+            <option value="new york">New York</option>
+            <option value="los angeles">Los Angeles</option>
+            <option value="chicago">Chicago</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="london">London</option>
+          </select>
+          <button id="get-weather-btn">GET WEATHER</button>
+        </div>
+
+        <div id="results" class="results-grid">
+          <!-- card utama: lokasi, suhu utama, icon, & cuaca -->
+          <div class="card main-weather-card">
+            <div class="weather-header">
+              <h2 id="location">---</h2>
+              <img id="weather-icon" src="" alt="Weather Icon" />
+            </div>
+            <div class="weather-temp-group">
+              <span id="main-temperature">--°C</span>
+              <span id="weather-main">--</span>
+            </div>
+          </div>
+          <!-- bagian 'humidity' -->
+          <div class="card sub-card">
+            <span class="card-label">HUMIDITY</span>
+            <span id="humidity" class="card-value">--%</span>
+          </div>
+          <!-- bagian 'feels like' -->
+          <div class="card sub-card">
+            <span class="card-label">FEELS LIKE</span>
+            <span id="feels-like" class="card-value">--°C</span>
+          </div>
+          <!-- bagian 'wind' -->
+          <div class="card sub-card wind-card">
+            <span>WIND</span>
+            <div class="wind-content">
+              <div class="wind-info">
+                <p>Speed: <span id="wind">-- m/s</span></p>
+                <p>Gusts: <span id="wind-gust">-- m/s</span></p>
+              </div>
+              <div class="compass-box">
+                <span class="compass-label north">N</span>
+                <span class="compass-label east">E</span>
+                <span class="compass-label south">S</span>
+                <span class="compass-label west">W</span>
+                <div id="wind-arrow" class="compass-arrow">↑</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

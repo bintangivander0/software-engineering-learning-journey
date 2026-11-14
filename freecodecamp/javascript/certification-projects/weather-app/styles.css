@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 440px;
+  padding: 20px;
+}
+
+.main-container {
+  background-color: #efefef;
+  border: 3px solid #111827;
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 #111827;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.app-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #3f3f3f;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 650px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background-color: #fefefe;
+  border: 2px solid #111827;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 3px 3px 0 #111827;
+}
+
+.card-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #3f3f3f;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.selection-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selection-card label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.selection-card select {
+  padding: 10px;
+  border: 2px solid #111827;
+  border-radius: 5px;
+  background-color: #f4f4f0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.selection-card button {
+  padding: 10px;
+  border: 2px solid #111827;
+  border-radius: 5px;
+  background-color: #111827;
+  color: #efefef;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.selection-card button:hover {
+  background-color: #4d4d4d;
+  border-color: #4d4d4d;
+}
+
+.selection-card button:active {
+  transform: translate(2px, 2px);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.main-weather-card {
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.weather-header img {
+  width: 64px;
+  height: 64px;
+  visibility: hidden;
+}
+
+.weather-temp-group {
+  text-align: right;
+}
+
+#main-temperature {
+  font-size: 2.2rem;
+  font-weight: 700;
+  display: block;
+}
+
+#weather-main {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3f3f3f;
+}
+
+.card-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.wind-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.wind-info p {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.compass-box {
+  margin: 10px auto 0;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #111827;
+  border-radius: 50%;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.compass-label {
+  position: absolute;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #3f3f3f;
+}
+
+.compass-label.north { top: 2px; }
+.compass-label.south { bottom: 2px; }
+.compass-label.east { right: 4px; }
+.compass-label.west { left: 4px; }
+
+.compass-arrow {
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 1;
+  transform-origin: center;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
