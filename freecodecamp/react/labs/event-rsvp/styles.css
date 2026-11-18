@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f8da;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 350px;
+  height: auto;
+  border: 3px solid #3d3d3d;
+  background-color: #f8f8f1;
+  box-shadow: 6px 7px 0 0.1px #3d3d3d;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.7rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 4px;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 30px
+}
+
+label {
+  font-family: 'Cormorant Garamond';
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+input[type='text'], 
+input[type='email'], 
+input[type='number'] {
+  appearance: none;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border: 2px solid #3d3d3d;
+  background-color: #715c4d;
+  color: #fefefe;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+input[type='text']::placeholder, 
+input[type='email']::placeholder, 
+input[type='number']::placeholder {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  color: #fefefe;
+}
+
+input[type='text']:valid, 
+input[type='email']:valid, 
+input[type='number']:valid {
+  outline: none;
+  border-color: #6eed89;
+}
+
+input[type='text']:invalid, 
+input[type='email']:invalid, 
+input[type='number']:invalid {
+  outline: none;
+  border-color: #ef4141;
+}
+
+label:has(input[type='checkbox']) {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+input[type='checkbox'] {
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  border: 3px solid #3d3d3d;
+  border-radius: 50%;
+  background-color: #f6f8da;
+  cursor: pointer;
+  display: inline-grid;
+  place-content: top;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.4s ease;
+}
+
+input[type='checkbox']:checked {
+  background-color: #7bf76d;
+}
+
+button {
+  display: block;
+  width: 80%;
+  height: 38px;
+  margin: 0 auto 15px;
+  appearance: none;
+  border: 3px solid #3d3d3d;
+  background-color: #715c4d;
+  font-family: 'Cormorant Garamond';
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-style: normal;
+  color: #fefefe;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #997d6a;
+}
+
+button:active {
+  transform: translate(4px, 4px);
+}
